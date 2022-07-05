@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 17px;
+  font-size: 18px;
+  margin: 2rem 1em;
+  padding: 20px;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
+
+}
+
+.image-container {
+
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.overlay-view {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: none;
+}
+
+.overlay-view img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  transform: translate(-50%, -50%);
+
+}
+
+.image-container:hover .overlay-view {
+  cursor: pointer;
+  display: block;
+}
+
+
+.text h2 {
+  color: white;
+  padding: 20px 0;
+  font-size: 21px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.text h2:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.text p {
+
+  color: hsl(215, 51%, 70%);
+
+
+}
+
+.num-day {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+  justify-content: space-between;
+}
+
+.eth,
+.days {
+  align-items: center;
+  display: flex;
+}
+
+.eth p {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  padding-left: 7px;
+}
+
+.days p {
+  padding-left: 7px;
+}
+
+hr {
+  border-color: hsl(215, 32%, 27%);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+
+}
+
+.author img {
+
+  border: 2px solid white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+
+.author p a.name {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.author p a.name:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
